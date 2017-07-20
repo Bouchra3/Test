@@ -1,0 +1,33 @@
+
+h2,p{
+	text-align: center;
+
+}
+.navbar-default {
+    background-color: #132959;
+    border-color: #132959;
+    color: #fff;
+}
+.btn-inscription{
+
+    display: inline-block;
+    padding: 7px 12px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 15px;
+
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+#test{
+	background-color: green;
+	color: #fff; 
+
+}
