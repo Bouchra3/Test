@@ -21,8 +21,8 @@
 	      <form class="form-inline" id="formConnexion" method="POST">
 	      <input type="hidden" name="id">
 			  <div class="form-group">
-			    <label for="exampleInputName2">Votre email</label>
-			    <input type="text" class="form-control" id="exampleInputName2" placeholder="Votre login" name="login">
+			    <label for="emailId">Votre email</label>
+			    <input type="text" class="form-control" id="emailId" placeholder="Votre login" name="login">
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputEmail2">mot de passe</label>

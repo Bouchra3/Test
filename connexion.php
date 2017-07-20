@@ -6,5 +6,6 @@
 
     if(isset($_POST["login"], $_POST["mdp"])){
         $connex = new Connect();
-        echo json_encode($connex->read($_POST["login"], $_POST["mdp"]));
+        $mdp = md5($_POST["mdp"]);
+        echo json_encode($connex->read($_POST["login"], $mdp));
     }
