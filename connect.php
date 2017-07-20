@@ -22,8 +22,8 @@ class Connect {
             return $this->connt->lastInsertId();
         }
 
-        function read($id){
-            $data = $this->connt->query("SELECT * FROM inscription WHERE id_inscription = $id");
+        function read($numero_email, $mdp){
+            $data = $this->connt->query("SELECT * FROM inscription WHERE numero_ou_email = '$numero_email' AND mot_de_passe = '$mdp'");
             $result = $data->fetch(PDO::FETCH_ASSOC);
             
             return $result;

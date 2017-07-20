@@ -1,19 +1,15 @@
 $(function() {
 
 	//affichage 
-	$("#formConnexion").on("click",function(event){
+	$("#formConnexion").on("submit",function(event){
 		event.preventDefault();//Annule l'evenement par defaut
 		$.ajax({
             url: "connexion.php",
             type: "POST",
-            dataType: "JSON",
+			dataType: "JSON",
+			data: $("#formConnexion").serialize(),
             success: function (reponse){
-                
-           
-
-                reponse = JSON.parse(reponse);
-                console.log(reponse[elem].id_inscription+reponse[elem].prenom+reponse[elem].nom);
-
+                console.log(reponse.nom + " " + reponse.prenom);
             }
         });
 	});

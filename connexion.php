@@ -1,10 +1,10 @@
 <?php
 
     header("Access-Control-Allow-Origin: *");
-    header('Content-type: application/json')
+    header('Content-type: application/json');
     require "connect.php";
 
-    if(isset($_POST["id"])){
+    if(isset($_POST["login"], $_POST["mdp"])){
         $connex = new Connect();
-        echo json_encode($connex->read($_POST["id"]));
+        echo json_encode($connex->read($_POST["login"], $_POST["mdp"]));
     }
